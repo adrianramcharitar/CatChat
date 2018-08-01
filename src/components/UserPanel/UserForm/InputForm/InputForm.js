@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 class InputForm extends Component {
     render() {
-        const { title, value, placeholderText, buttonText } = this.props;
+        const { title, value, placeholderText, buttonText, onSubmit } = this.props;
         return (
-            <form className="InputForm">
+            <form className="InputForm" onSubmit={onSubmit}>
                 <header>{title}</header>
                 <fieldset className="button-input">
                     <input type="text" value={value} placeholder={placeholderText} />
@@ -18,10 +18,11 @@ class InputForm extends Component {
 }
 
 InputForm.propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
     value: PropTypes.string,
-    placeholderText: PropTypes.string,
-    buttonText: PropTypes.string,
+    placeholderText: PropTypes.string.isRequired,
+    buttonText: PropTypes.string.isRequired,
+    onSubmit: PropTypes.func.isRequired,
 };
 
 export default InputForm;
