@@ -1,0 +1,84 @@
+@import '../../../shared/styles/variables.css';
+
+:root {
+    --cc-user-status-size: 30px;
+}
+
+.ActiveUser {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.ActiveUser:hover,
+.ActiveUser:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ActiveUser:first-child {
+    margin-top: 0;
+}
+
+.ActiveUser header {
+    display: inline-block;
+    width: auto;
+}
+
+.ActiveUser header .status-wrapper {
+    float: left;
+    width: var(--cc-user-status-size);
+    height: var(--cc-user-status-size);
+    padding: 0 10px 0 0;
+}
+
+.ActiveUser header .status-wrapper .Spinner {
+    margin-top: 5px;
+}
+
+.ActiveUser header .status-indicator {
+    display: block;
+    width: calc(var(--cc-user-status-size) - 20px);
+    height: calc(var(--cc-user-status-size) - 20px);
+    margin: 10px 5px 10px 5px;
+    background: var(--cc-color-success);
+    border-radius: var(--cc-user-status-size);
+}
+
+.ActiveUser header h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 30px;
+    color: var(--cc-color-text);
+}
+
+.ActiveUser:hover header h1,
+.ActiveUser:focus header h1 {
+    color: var(--cc-color-alt);
+}
+
+.ActiveUser:hover header .status-indicator,
+.ActiveUser:focus header .status-indicator {
+    background: var(--cc-color-alt);
+}
+
+.ActiveUser a.at-message {
+    position: relative;
+    float: right;
+    height: 30px;
+    line-height: 6px;
+    transition: background 150ms ease;
+}
+
+.ActiveUser a.at-message:after {
+    display: none;
+}
+
+.ActiveUser a.at-message:hover,
+.ActiveUser a.at-message:focus,
+.ActiveUser:hover a.at-message,
+.ActiveUser:focus a.at-message {
+    color: var(--cc-color-white);
+    background: var(--cc-color-alt);
+}

@@ -1,0 +1,72 @@
+@import '../../../../shared/styles/variables.css';
+
+.InputForm {
+    display: block;
+    position: relative;
+    padding: 45px 15px 15px 15px;
+    margin: 0 0 20px;
+    background: var(--cc-color-box);
+    border-bottom: 3px solid var(--cc-color-box-border);
+    border-radius: var(--cc-radius);
+}
+
+.InputForm header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 15px;
+    background: var(--cc-color-box-medium);
+    border-radius: var(--cc-radius) var(--cc-radius) 0 0;
+}
+
+.InputForm header h1,
+.InputForm header a.control {
+    line-height: 30px;
+    color: var(--cc-color-text);
+}
+
+.InputForm header h1 {
+    margin: 0;
+}
+
+.InputForm header a.control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 15px 0 16px;
+    font-size: 12px;
+    border-radius: 0 var(--cc-radius) 0 0;
+    transition: background 150ms ease;
+}
+
+.InputForm header a.control:after {
+    display: none;
+}
+
+.InputForm header a.control:hover,
+.InputForm header a.control:focus {
+    color: var(--cc-color-white);
+    background: var(--cc-color-alt);
+    outline: none;
+}
+
+.InputForm input[type='text']:hover + button,
+.InputForm input[type='text']:focus + button {
+    color: var(--cc-color-white);
+    background: var(--cc-color-alt);
+}
+
+.InputForm header [class^='cc-icon-']:before,
+.InputForm header [class*=' cc-icon-']:before {
+    vertical-align: middle;
+}
+
+.InputForm label.error {
+    padding: 0 10px;
+    margin: 12px 0 0;
+    font-size: 15px;
+    color: var(--cc-color-alert);
+}

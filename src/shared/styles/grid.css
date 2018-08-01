@@ -1,0 +1,61 @@
+/* CSS GRID **********************************************/
+[class*='cc-grid'] {
+    display: grid;
+}
+
+[class*='cc-grid-inline'] {
+    display: inline-grid;
+}
+
+.cc-grid-12 {
+    grid-template-columns: var(--cc-grid-12);
+}
+
+.cc-grid-8 {
+    grid-template-columns: var(--cc-grid-8);
+}
+
+.cc-grid-6 {
+    grid-template-columns: var(--cc-grid-6);
+}
+
+.cc-grid-4 {
+    grid-template-columns: var(--cc-grid-4);
+}
+
+.cc-grid-2 {
+    grid-template-columns: var(--cc-grid-2);
+}
+
+/* LAPTOP (8-columns) */
+@media screen and (max-width: 1024px) {
+    .cc-grid-12 {
+        grid-template-columns: var(--cc-grid-8);
+    }
+}
+
+/* TABLET (6-columns) */
+@media screen and (max-width: 768px) {
+    .cc-grid-12 {
+        grid-template-columns: var(--cc-grid-6);
+    }
+
+    .cc-grid-8 {
+        grid-template-columns: var(--cc-grid-6);
+    }
+}
+
+/* MOBILE (4-columns) */
+@media screen and (max-width: 480px) {
+    .cc-grid-12 {
+        grid-template-columns: var(--cc-grid-4);
+    }
+
+    .cc-grid-8 {
+        grid-template-columns: var(--cc-grid-4);
+    }
+
+    .cc-grid-6 {
+        grid-template-columns: var(--cc-grid-4);
+    }
+}

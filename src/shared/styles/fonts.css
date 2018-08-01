@@ -1,0 +1,13 @@
+[class^="cc-icon-"]:before,
+[class*=" cc-icon-"]:before {
+    position: relative;
+}
+
+.cc-icon-user:before {
+    top: 1px;
+    font-size: 90%;
+}
+.cc-icon-popup:before {
+    top: 2px;
+    font-size: 90%;
+}

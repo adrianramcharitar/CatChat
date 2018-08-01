@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* reactchat */
+@font-face {
+    font-family: 'reactchat';
+    src: url('https://file.myfontastic.com/vTBy9nPmGprmSUfzSTwkdi/fonts/1481517274.eot');
+    src: url('https://file.myfontastic.com/vTBy9nPmGprmSUfzSTwkdi/fonts/1481517274.eot?#iefix')
+            format('embedded-opentype'),
+        url('https://file.myfontastic.com/vTBy9nPmGprmSUfzSTwkdi/fonts/1481517274.woff') format('woff'),
+        url('https://file.myfontastic.com/vTBy9nPmGprmSUfzSTwkdi/fonts/1481517274.ttf') format('truetype'),
+        url('https://file.myfontastic.com/vTBy9nPmGprmSUfzSTwkdi/fonts/1481517274.svg#1481517274') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: 'reactchat' !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='cc-icon-']:before,
+[class*=' cc-icon-']:before {
+    font-family: 'reactchat' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cc-icon-user:before {
+    content: '\61';
+}
+.cc-icon-popup:before {
+    content: '\62';
+}
+.cc-icon-cancel:before {
+    content: '\63';
+}
+.cc-icon-add:before {
+    content: '\64';
+}

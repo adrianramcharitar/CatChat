@@ -1,0 +1,51 @@
+:root {
+    /* COLOURS *******************************************/
+    --cc-color-main: #db3d44; /* Trend Red */
+    --cc-color-main-medium: #b12027;
+    --cc-color-main-dark: #76151a;
+    --cc-color-alt: #0096cc; /* Green */
+    --cc-color-alt-light: #007099;
+    --cc-color-alt-dark: #004b66;
+    --cc-color-white: #fff;
+    --cc-color-black: #000;
+    --cc-color-box: #f3f3f3; /* Light grey */
+    --cc-color-box-light: #e6e6e6;
+    --cc-color-box-medium: #dadada;
+    --cc-color-box-dark: #c2c2c2;
+    --cc-color-box-border: var(--cc-color-box-light);
+    --cc-color-text: #444; /* Dark grey */
+    --cc-color-text-light: var(--cc-color-white);
+    --cc-color-text-medium: #767676; /* Medium grey */
+    --cc-color-link: var(--cc-color-main);
+    --cc-color-link-light: var(--cc-color-alt-light);
+    --cc-color-link-dark: var(--cc-color-main-medium);
+    --cc-color-highlight: #fff3af; /* Yellow */
+    --cc-color-success: #cdd255; /* Green */
+    --cc-color-alert: #ee2040; /* Red */
+
+    /* MISC **********************************************/
+    --cc-radius: 3px;
+    --cc-shadow: 0;
+    --cc-box-pad: 35px;
+
+    /* GRID **********************************************/
+    --cc-grid-12: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;
+    --cc-grid-8: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    --cc-grid-6: 16.667% 16.667% 16.667% 16.667% 16.667% 16.667%;
+    --cc-grid-4: 25% 25% 25% 25%;
+    --cc-grid-2: 50% 50%;
+}
+
+/* MEDIA QUERIES *****************************************/
+/* DESKTOP (12-columns)
+@media screen and (min-width: 1025px) {}
+*/
+/* LAPTOP (8-columns)
+@media screen and (max-width: 1024px) {}
+*/
+/* TABLET (6-columns)
+@media screen and (max-width: 768px) {}
+*/
+/* MOBILE (4-columns)
+@media screen and (max-width: 480px) {}
+*/

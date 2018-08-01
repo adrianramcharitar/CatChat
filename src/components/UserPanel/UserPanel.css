@@ -1,0 +1,62 @@
+@import '../../shared/styles/variables.css';
+
+.UserPanel {
+    grid-column: 1 / span 4;
+    padding-right: 20px;
+}
+
+.UserPanel .connected-users {
+    position: relative;
+    padding: 49px 15px 15px;
+    margin: 0 0 20px;
+    background: var(--cc-color-box);
+    border-bottom: 3px solid var(--cc-color-box-border);
+    border-radius: var(--cc-radius);
+}
+
+.UserPanel .connected-users > header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 15px;
+    background: var(--cc-color-box-medium);
+    border-radius: var(--cc-radius) var(--cc-radius) 0 0;
+}
+.UserPanel .connected-users > header h1 {
+    line-height: 30px;
+    margin: 0;
+    color: var(--cc-color-text);
+}
+
+.UserPanel .user-list {
+    max-height: calc(100vh - 342px);
+    overflow-y: auto;
+}
+
+/* LAPTOP (8-columns) */
+@media screen and (max-width: 1024px) {
+    .UserPanel {
+        grid-column: 1 / span 3;
+    }
+}
+
+/* TABLET (6-columns) */
+@media screen and (max-width: 768px) {
+    .UserPanel {
+        grid-column: 1 / span 6;
+        padding-right: 0;
+    }
+
+    .UserPanel .user-list {
+        max-height: 150px;
+    }
+}
+
+/* MOBILE (4-columns) */
+@media screen and (max-width: 480px) {
+    .UserPanel {
+        grid-column: 1 / span 4;
+    }
+}

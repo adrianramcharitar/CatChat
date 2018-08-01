@@ -1,0 +1,20 @@
+.Spinner {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+    max-height: 80px;
+    animation: animateSpin 1s linear infinite;
+}
+
+@keyframes animateSpin {
+    from {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, -360deg);
+    }
+
+    to {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1);
+    }
+}

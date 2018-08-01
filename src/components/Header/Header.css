@@ -1,0 +1,59 @@
+@import '../../shared/styles/variables.css';
+
+:root {
+    --cc-header-logo-height: 80px;
+}
+
+.Header {
+    grid-column: 1 / span all;
+    padding: 20px 0;
+}
+
+.Header > * {
+    margin-left: 25px;
+}
+
+.Header > *:first-child {
+    margin-left: 0;
+}
+
+.Header .logo {
+    display: inline-block;
+    height: var(--cc-header-logo-height);
+    width: auto;
+    vertical-align: top;
+}
+
+.Header .wordmark {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    line-height: var(--cc-header-logo-height);
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--cc-color-text);
+}
+
+.Header .wordmark strong {
+    font-weight: 900;
+}
+
+.Header .badge {
+    position: relative;
+}
+
+.Header .badge {
+    display: inline-block;
+    top: -7px;
+    padding: 4px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--cc-color-text);
+    background: var(--cc-color-box);
+    border-radius: 80px;
+}
+
+.Header .badge [class^='cc-icon-']:before,
+.Header .badge [class*=' cc-icon-']:before {
+    margin-left: 2px;
+}

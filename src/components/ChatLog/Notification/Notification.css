@@ -1,0 +1,29 @@
+@import '../../../shared/styles/variables.css';
+
+.Notification {
+    display: block;
+    padding: 15px 20px;
+    margin-top: 10px;
+    color: var(--cc-color-text-light);
+    background: var(--cc-color-text);
+    border-radius: var(--cc-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Notification:first-child {
+    margin-top: 0;
+}
+
+.Notification,
+.Notification.exit {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+    transition: opacity 0.5s, transform 1s;
+}
+
+.Notification.enter,
+.Notification.done {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 0.375s, transform 0.25s;
+}

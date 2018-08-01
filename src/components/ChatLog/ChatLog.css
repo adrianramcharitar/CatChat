@@ -1,0 +1,93 @@
+@import '../../shared/styles/variables.css';
+
+.ChatLog,
+.ChatLog .chat-box {
+    height: calc(100vh - 159px);
+    min-height: 200px;
+}
+
+.ChatLog {
+    position: relative;
+    background: var(--cc-color-white);
+    border: 1px solid var(--cc-color-box-dark);
+    border-radius: var(--cc-radius);
+    grid-column: 5 / span 8;
+}
+
+.ChatLog .chat-box {
+    padding: 15px;
+    overflow: auto;
+}
+
+.ChatLog .notifications {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: calc(100% - 30px);
+    overflow: hidden;
+}
+
+.ChatLog ul.log li {
+    margin: 0;
+    font-weight: 300;
+}
+
+.ChatLog ul.log li .meta {
+    display: block;
+    margin-top: 10px;
+    color: var(--cc-color-text-medium);
+    font-size: 85%;
+    font-weight: 200;
+}
+
+.ChatLog ul.log li:first-child .meta {
+    margin-top: 0;
+}
+
+.ChatLog ul.log li .user {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--cc-color-text);
+    font-weight: 900;
+}
+
+.ChatLog ul.log li .at-mention-current,
+.ChatLog ul.log li .at-mention-other {
+    padding: 0 3px;
+    background: var(--cc-color-highlight);
+}
+
+.ChatLog ul.log li .at-mention-other {
+    background: var(--cc-color-box);
+}
+
+.ChatLog .typing-indicator {
+    margin-bottom: 0;
+    color: var(--cc-color-main);
+}
+
+/* LAPTOP (8-columns) */
+@media screen and (max-width: 1024px) {
+    .ChatLog {
+        grid-column: 4 / span 5;
+    }
+}
+
+/* TABLET (6-columns) */
+@media screen and (max-width: 768px) {
+    .ChatLog {
+        grid-column: 1 / span 6;
+    }
+
+    .ChatLog,
+    .ChatLog .chat-box {
+        max-height: calc(100vh - 516px);
+    }
+}
+
+/* MOBILE (4-columns) */
+@media screen and (max-width: 480px) {
+    .ChatLog {
+        grid-column: 1 / span 4;
+    }
+}
