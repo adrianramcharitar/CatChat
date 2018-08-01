@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import UserPanel from '../UserPanel/UserPanel';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,8 @@ class App extends Component {
         return (
             <section className="App">
                 <Header />
-                <p>UserPanel</p>
+                <UserPanel/>
+
                 <p>ChatLog</p>
             </section>
         );
