@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
-import UserPanel from '../UserPanel/UserPanel';
 import './App.css';
+import UserPanel from '../UserPanel/UserPanel';
 
 class App extends Component {
     render() {
         return (
             <section className="App">
                 <Header />
-                <UserPanel/>
-
+                <UserPanel />
                 <p>ChatLog</p>
             </section>
         );
